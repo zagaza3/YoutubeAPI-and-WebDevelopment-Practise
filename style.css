@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body {
+    margin: 0;
+    height: 200vh;
+    background: linear-gradient(135deg, #00828b, #001e82);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar, .container::-webkit-scrollbar, .wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.MainTitle{
+    text-align: center;
+    font-weight: 400;
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+}
+.loginorsignup{
+    position: absolute;
+    top: 6%;
+    right: 0%;
+}
+.LoginBTN {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: 50%;
+    right: -40%;
+    width: 200px; /* Szelesseg */
+    height: 50px; /* Magassag */
+    padding: 10px 20px; /* padding a gombon belul */
+    font-size: 1em; 
+    color: white; 
+    background-color: #33bdc7; 
+    border: none; /* hatar */
+    border-radius: 5px; /* Hatar radius */
+    cursor: pointer; 
+    transition: background-color 0.3s; /* smooth valtas */
+}
+.LoginBTN:hover {
+    background-color: #a3f9ff; 
+}
+.SignUpBTN {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 50%;
+    right: 70%;
+    width: 200px; /* Szelesseg */
+    height: 50px; /* Magassag */
+    padding: 10px 20px; /* padding a gombon belul */
+    font-size: 1em; 
+    color: white; 
+    background-color: #33bdc7; 
+    border: none; /* hatar */
+    border-radius: 5px; /* Hatar radius */
+    cursor: pointer; 
+    transition: background-color 0.3s; /* smooth valtas */
+}
+.SignUpBTN:hover {
+    background-color: #a3f9ff; 
+}
+@media screen and (max-width: 1500px) {
+    .MainTitle{
+        font-size: 2em;
+    }
+    .LoginBTN{
+        width: 120px; /* Szelesseg */
+        height: 35px; /* Magassag */
+        padding: 10px 20px; /* padding a gombon belul */
+        font-size: 0.8em; 
+    }
+    .SignUpBTN{
+        width: 120px; /* Szelesseg */
+        height: 35px; /* Magassag */
+        padding: 10px 20px; /* padding a gombon belul */
+        font-size: 0.8em;
+    }
+    .loginorsignup{
+        top: 2.5%;
+        right: 0%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .MainTitle{
+        font-size: 2em;
+    }
+    .LoginBTN{
+        width: 120px; /* Szelesseg */
+        height: 35px; /* Magassag */
+        padding: 10px 20px; /* padding a gombon belul */
+        font-size: 0.8em; 
+    }
+    .SignUpBTN{
+        width: 120px; /* Szelesseg */
+        height: 35px; /* Magassag */
+        padding: 10px 20px; /* padding a gombon belul */
+        font-size: 0.8em;
+    }
+    .loginorsignup{
+        top: 2.5%;
+        right: 0%;
+    }
+}
+.cardsMain{
+    position: absolute;
+    top: 25%;
+    right: 29.5%;
+}
+  .vid1{
+    position: relative;
+    top: 60%;
+  }
+  .banner-image {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255)
+  }
+  
+  h1{
+    font-family: 'Righteous', sans-serif;
+    color: rgba(255,255,255,0.98);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+  }
+  
+  p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .button-wrapper{
+    position: relative;
+    right: -34%;
+    margin-top: 18px;
+  }
+  
+  .btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;  
+    letter-spacing: 2px;  
+    cursor: pointer;
+  }
+  
+  .btn + .btn {
+    margin-left: 10px;
+  }
+  
+  .outline {
+    background: transparent;
+    color: rgba(0, 212, 255, 0.9);
+    border: 1px solid rgba(0, 212, 255, 0.6);
+    transition: all .3s ease;
+    
+  }
+  
+  .outline:hover{
+    transform: scale(1.125);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+    transition: all .3s ease;  
+  }
+  
+  .fill {
+    background: rgba(0, 212, 255, 0.9);
+    color: rgba(255,255,255,0.95);
+    filter: drop-shadow(0);
+    font-weight: bold;
+    transition: all .3s ease; 
+  }
+  
+  .fill:hover{
+    transform: scale(1.125);  
+    border-color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+    transition: all .3s ease;    
+  }
+
+  .cardsMain2{
+    position: absolute;
+    top:100%;
+    right: 29.5%;
+}
+  .vid2{
+    position: relative;
+    top: 60%;
+  }
+  .banner-image2 {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255)
+  }
+  
+  .button-wrapper2{
+    position: relative;
+    right: -34%;
+    margin-top: 18px;
+  }
+  
+  .btn2 {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;  
+    letter-spacing: 2px;  
+    cursor: pointer;
+  }
+  
+  .btn2 + .btn2 {
+    margin-left: 10px;
+  }
+  
+  .outline2 {
+    background: transparent;
+    color: rgba(0, 212, 255, 0.9);
+    border: 1px solid rgba(0, 212, 255, 0.6);
+    transition: all .3s ease;
+    
+  }
+  
+  .outline2:hover{
+    transform: scale(1.125);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+    transition: all .3s ease;  
+  }
+  
+  .fill2 {
+    background: rgba(0, 212, 255, 0.9);
+    color: rgba(255,255,255,0.95);
+    filter: drop-shadow(0);
+    font-weight: bold;
+    transition: all .3s ease; 
+  }
+  
+  .fill2:hover{
+    transform: scale(1.125);  
+    border-color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+    transition: all .3s ease;    
+  }
