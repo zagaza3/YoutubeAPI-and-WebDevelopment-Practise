@@ -27,7 +27,7 @@ function getVideoTitle(iframeId, titleId) {
         if (src.includes('youtube.com/embed')) {
             const videoId = src.split('/').pop();
 
-            fetch(`https://www.googleapis.com/youtube/v3/videos?id=${videoId}&part=snippet&key=AIzaSyDKReJJfpw2rdjp9SGm8358HA8VSlRxkcQ`)
+            fetch(`https://www.googleapis.com/youtube/v3/videos?id=${videoId}&part=snippet&key=*key*`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
